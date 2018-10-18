@@ -1,0 +1,27 @@
+{
+  "name": "advocacy",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000/",
+  "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
+    "@material-ui/lab": "^3.0.0-alpha.18",
+    "mdbreact": "^4.7.0",
+    "react": "^16.4.2",
+    "react-bootstrap-tabs": "^1.0.2",
+    "react-coverflow": "^0.2.14",
+    "react-dom": "^16.4.2",
+    "react-image-lightbox": "^5.0.0",
+    "react-images": "^0.5.19",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-scroll-up-button": "^1.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
