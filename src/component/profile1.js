@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Container, Row, Col, Fa, Collapse, CardBody, Button, Input, Card, Modal} from 'mdbreact';
+import {Row, Col, Fa, CardBody, Button, Card, Modal} from 'mdbreact';
 import Divider from '@material-ui/core/Divider';
 import { Avatar} from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';

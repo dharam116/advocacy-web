@@ -187,12 +187,6 @@ class TemporaryDrawer extends React.Component {
                     <div className="text-center mb-3">
                       <Button gradient="blue" rounded className="btn-block z-depth-1a" >Register</Button>
                     </div>
-                    <p className="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
-                    <div className="row my-3 d-flex justify-content-center">
-                      <Button type="button" color="white" rounded className="mr-md-3 z-depth-1a"><Fa icon="facebook" className="blue-text text-center" /></Button>
-                      <Button type="button" color="white" rounded className="mr-md-3 z-depth-1a"><Fa icon="twitter" className="blue-text" /></Button>
-                      <Button type="button" color="white" rounded className="z-depth-1a"><Fa icon="google-plus" className="blue-text" /></Button>
-                    </div>
                     </CardBody>
                   </Tab>
                 </Tabs>
@@ -211,7 +205,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Home color="primary" />
+                  <Home color="black" />
                 </ListItemIcon>
                   Home
                 </ListItem>
@@ -220,7 +214,7 @@ class TemporaryDrawer extends React.Component {
                 
                 <ListItem button onClick={this.handleClick} >
                   <ListItemIcon>
-                    <BusinessCenter color="primary" />
+                    <BusinessCenter color="black" />
                   </ListItemIcon>
                   <Link to='#the-firm' style={{ textDecoration: 'none', color: 'black'}}>The Firm</Link>
                   {this.state.isListOpen ? <ExpandLess /> : <ExpandMore />}
@@ -269,7 +263,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/practice-areas' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Star color="primary" />
+                  <Star color="black" />
                 </ListItemIcon>
                   Practice Areas
                 </ListItem>
@@ -279,7 +273,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/services' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Favorite color="primary" />
+                  <Favorite color="black" />
                 </ListItemIcon>  
                   Services
                 </ListItem>
@@ -289,7 +283,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/portfolio' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <PhotoAlbum color="primary" />
+                  <PhotoAlbum color="black" />
                 </ListItemIcon>
                   Portfolio
                 </ListItem>
@@ -299,7 +293,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/our-people' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Person color="primary" />
+                  <Person color="black" />
                 </ListItemIcon>
                   Our Team
                 </ListItem>
@@ -308,7 +302,7 @@ class TemporaryDrawer extends React.Component {
 
                 <ListItem button onClick={this.handleClick1}>
                   <ListItemIcon>
-                    <Visibility color="primary" />
+                    <Visibility color="black" />
                   </ListItemIcon>
                   <Link to='#insights' style={{ textDecoration: 'none', color: 'black'}}>Insights</Link>
                   {this.state.isListOpen1 ? <ExpandLess /> : <ExpandMore />}
@@ -339,7 +333,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/referrals' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Person color="primary" />
+                  <Person color="black" />
                 </ListItemIcon>
                   Referrals
                 </ListItem>
@@ -348,7 +342,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/contact-us' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <ContactPhone color="primary" />
+                  <ContactPhone color="black" />
                 </ListItemIcon>
                   Contact Us
                 </ListItem>
@@ -357,7 +351,7 @@ class TemporaryDrawer extends React.Component {
                 <Link to='/search' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
-                  <Search color="primary" />
+                  <Search color="black" />
                 </ListItemIcon>
                   Search
                 </ListItem>
