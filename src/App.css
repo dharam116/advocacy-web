@@ -95,6 +95,19 @@
 .btn-floating:hover {
   background-color: black!important; 
 }
+.f1:hover {
+  background-color: #3B5998!important;
+}
+.f2:hover {
+  background-color: #38A1F3!important;
+}
+.f3:hover {
+  background-color: #CC3333!important;
+}
+.f4:hover {
+  background-color: #0077B5!important;
+}
+
 .btn-floating {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
@@ -243,9 +256,9 @@ element.style {
     position: fixed;
     width: 40px;
     height:40px;
-    background: #4285F4;
+    background: #000;
     right: 0;
-    top: 400px;
+    top: 500px;
     border-radius: 4px 0 0 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
@@ -280,12 +293,12 @@ button {
   color:white;
   letter-spacing:1px;
   text-shadow:0;
-  font:{
+  font: {
     size:12px;
     weight:bold;
   }
-  cursor: pointer;
-  transition: all 0.25s ease;
+  cursor : pointer;
+  transition : all 0.25s ease;
   &:hover {
     color:white;
     background: #33b5e5;
@@ -558,7 +571,7 @@ button {
 }
 .filter {
   padding: 10px;
-  border: 1px solid #33b5e5;
+  border: 1px solid #FF0000;
   border-radius: 5px;
   background-color: white!important;
 }
@@ -592,7 +605,40 @@ button {
   right: -178px;
   top: 10%;
   z-index: 9;
-  background-color: #eb712e!important;
-  border-color: #eb712e!important;
+  background-color: #FF0000!important;
   transform: rotate(-90deg);
+}
+.btn-black:hover {
+  background-color: #FF0000!important; 
+}
+.services h2 {
+  color: red;
+  font-weight: bolder;
+}
+.f5:hover {
+  color: #38A1F3!important;
+}
+.f6:hover {
+  color: #0077B5!important;
+}
+.f7:hover {
+  color: #fd5949!important;
+}
+.list {
+  font-weight: bolder;
+}
+.list :hover {
+  color: red!important; 
+}
+.btn-block {
+  background-image: linear-gradient(-90deg, black, grey);
+}
+.twi:hover {
+  background-color: #38A1F3!important;
+}
+.face:hover {
+  background-color: #3B5998!important;
+}
+.goop:hover {
+  background-color: #CC3333!important;
 }

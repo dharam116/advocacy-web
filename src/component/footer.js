@@ -79,10 +79,10 @@ class FooterPage extends React.Component {
                         <Col md="4" lg="4" className="ml-lg-0">
                             <div className="text-center text-md-right">
                                 <ul className="list-unstyled list-inline">
-                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa fa-facebook"></i></a></li>
-                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa fa-twitter"></i></a></li>
-                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa fa-google-plus"></i></a></li>
-                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa fa-linkedin"></i></a></li>
+                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa f1 f1 fa-facebook"></i></a></li>
+                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa f2 fa-twitter"></i></a></li>
+                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa f3 fa-google-plus"></i></a></li>
+                                    <li className="list-inline-item"><a className="btn-floating btn-sm rgba-white-slight mx-1"><i className="fa f4 fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </Col>

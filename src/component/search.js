@@ -66,7 +66,7 @@ class Search extends Component {
 		    <Container>
 			    <Row>
 				    <Col md="3">
-						<div className="btn btn-md btn-info" onClick={this.click}>
+						<div className="btn btn-md btn-black" onClick={this.click}>
 							<a className="float-left font-weight-bold" ><i className="fa fa-filter mr-2"></i> Filter </a>
 							<span className="float-right">
 								<i className="fa fa-minus ml-5"></i>
@@ -117,9 +117,9 @@ class Search extends Component {
 								<div className="details">
 									<CardContent>
 										<Link to='#' onClick={this.toggle1} style={{ textDecoration: 'none', color: 'black'}}>
-											<h6 className="font-weight-bold blue-text">Name</h6>
+											<h6 className="font-weight-bold black-text">Name</h6>
 										</Link>
-										<Modal size="lg" isOpen={this.state.modal1} toggle={this.toggle1}>
+										<Modal size="lg" style={{paddingTop: '4%'}} isOpen={this.state.modal1} toggle={this.toggle1}>
 										<div style={{background : 'linear-gradient(to bottom, white, #9e9e9e )'}}> 
 										<Row>
 											<Col md="12">
@@ -131,7 +131,7 @@ class Search extends Component {
 												        title="Image name1" />
 														<div className="details">
 															<CardBody>
-																<h6 className="font-weight-bold blue-text">Name</h6>
+																<h6 className="font-weight-bold black-text">Name</h6>
 																<h6>Post</h6>
 																<ul className="rating">
 												                    <li>
@@ -150,7 +150,7 @@ class Search extends Component {
 												                    	<Fa icon="star-o"></Fa>
 												                    </li>
 												                </ul>
-																<Link to="#" className="btn btn-info btn-sm waves-effect waves-light"> Call Now</Link>
+																<Link to="#" className="btn btn-black rounded btn-sm waves-effect waves-light"> Call Now</Link>
 															</CardBody>
 														</div>
 														<div className="detail">
@@ -163,7 +163,7 @@ class Search extends Component {
 											    </Card>
 
 											    <div className="card2">
-									                <Tabs headerStyle={{fontSize:'15px', fontWeight: 'bold', color: 'black'}} activeHeaderStyle={{backgroundColor: '#fff', color:'#33b5e5'}}>
+									                <Tabs headerStyle={{fontSize:'15px', fontWeight: 'bold', color: 'black'}} activeHeaderStyle={{backgroundColor: '#fff', color:'#FF0000'}}>
 														<Tab label="Overview">
 															<Card className="tab">
 																<h6 className="font-weight-bold">About City Dental Care</h6>
@@ -254,7 +254,7 @@ class Search extends Component {
 						                    	<Fa icon="star-o"></Fa>
 						                    </li>
 						                </ul>
-										<Link to="#" className="btn btn-info btn-sm waves-effect waves-light"> Call Now</Link>
+										<Link to="#" className="btn btn-black btn-sm waves-effect waves-light"> Call Now</Link>
 									</CardContent>
 								</div>
 								<div className="detail">
@@ -273,7 +273,7 @@ class Search extends Component {
 						        title="Image name1" />
 								<div className="details">
 									<CardContent>
-										<h6 className="font-weight-bold blue-text">Name</h6>
+										<h6 className="font-weight-bold black-text">Name</h6>
 										<h6>Post</h6>
 										<ul className="rating">
 						                    <li>
@@ -292,7 +292,7 @@ class Search extends Component {
 						                    	<Fa icon="star"></Fa>
 						                    </li>
 						                </ul>
-						                <Link to="#" className="btn btn-info btn-sm waves-effect waves-light"> Call Now</Link>
+						                <Link to="#" className="btn btn-black btn-sm waves-effect waves-light"> Call Now</Link>
 									</CardContent>
 								</div>
 								<div className="detail">
@@ -311,7 +311,7 @@ class Search extends Component {
 						        title="Image name1" />
 								<div className="details">
 									<CardContent>
-										<h6 className="font-weight-bold blue-text">Name</h6>
+										<h6 className="font-weight-bold black-text">Name</h6>
 										<h6>Post</h6>
 										<ul className="rating">
 						                    <li>
@@ -330,7 +330,7 @@ class Search extends Component {
 						                    	<Fa icon="star-half-o"></Fa>
 						                    </li>
 						                </ul>
-						                <Link to="#" className="btn btn-info btn-sm waves-effect waves-light"> Call Now</Link>
+						                <Link to="#" className="btn btn-black btn-sm waves-effect waves-light"> Call Now</Link>
 						            </CardContent>
 								</div>
 								<div className="detail">
@@ -349,7 +349,7 @@ class Search extends Component {
 						        title="Image name1" />
 								<div className="details">
 									<CardContent>
-										<h6 className="font-weight-bold blue-text">Name</h6>
+										<h6 className="font-weight-bold black-text">Name</h6>
 										<h6>Post</h6>
 										<ul className="rating">
 						                    <li>
@@ -368,7 +368,7 @@ class Search extends Component {
 						                    	<Fa icon="star"></Fa>
 						                    </li>
 						                </ul>
-										<Link to="#" className="btn btn-info btn-sm waves-effect waves-light"> Call Now</Link>
+										<Link to="#" className="btn btn-black btn-sm waves-effect waves-light"> Call Now</Link>
 									</CardContent>
 								</div>
 								<div className="detail">
@@ -381,7 +381,7 @@ class Search extends Component {
 					    </Card>
 				    </Col>
 				    <Col md="1">
-					    <Button type="button" onClick={this.toggle} className="btn btn-rounded btn-sm fav-dr-model-btn waves-effect waves-light" data-toggle="modal" >
+					    <Button onClick={this.toggle} className="btn rounded btn-sm fav-dr-model-btn waves-effect waves-light" data-toggle="modal" >
 						    Categories
 						</Button>
 				    	<Modal side position="top-right" isOpen={this.state.modal} toggle={this.toggle}>

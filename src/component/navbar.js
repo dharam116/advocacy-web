@@ -152,10 +152,10 @@ class TemporaryDrawer extends React.Component {
               <img src="https://static.wixstatic.com/media/6f38c3_1d7d6ecf60d141c8a4bf993da41b5505~mv2.png/v1/fill/w_212,h_69,al_c,q_80/6f38c3_1d7d6ecf60d141c8a4bf993da41b5505~mv2.webp" className="App-logo rounded" alt="logo" width="150px" height="auto"/>
             </div>
 
-            <Link to='#' style={{textDecoration: 'none'}} onClick={this.toggle} className="btn btn-info btn-rounded btn-sm waves-effect waves-light" data-toggle="modal" data-target="#navbarLogin">Log in/ Sign Up<i className="fa fa-sign-in ml-2"></i></Link>
+            <Link to='#' style={{textDecoration: 'none'}} onClick={this.toggle} className="btn btn-black rounded btn-sm waves-effect waves-light" data-toggle="modal" data-target="#navbarLogin">Log in/ Sign Up<i className="fa fa-sign-in ml-2"></i></Link>
             <Modal style={{paddingTop: '35px'}} isOpen={this.state.modal} toggle={this.toggle}>
               <Card>
-                <Tabs headerStyle={{fontSize:'20px', fontWeight: 'bold', color: 'black'}} className="nav-justified" activeHeaderStyle={{backgroundColor: '#33b5e5', color:'white'}}>
+                <Tabs headerStyle={{fontSize:'20px', fontWeight: 'bold', color: 'black'}} className="nav-justified" activeHeaderStyle={{backgroundColor: '#000', color:'white'}}>
                   <Tab label=" Login ">
                     <CardBody>
                     <div className="grey-text">
@@ -163,15 +163,16 @@ class TemporaryDrawer extends React.Component {
                         <Input label="Your email" icon="envelope" group type="email" validate error="wrong" success="right" />
                         <Input label="Your password" icon="lock" group type="password" validate containerClass="mb-0"/>
                       </div>  
-                        <p className="font-small d-flex justify-content-end pb-3">Forgot <a href="#" className="blue-text ml-1"> Password</a>?</p>
+                        <p className="font-small d-flex justify-content-end pb-3">Forgot <a href="#" className="black-text ml-1"> Password</a>?</p>
                       <div className="text-center mb-3">
-                        <button id="button" className={this.state.btnClass} onClick={this.changeBtnClass} style={{outline:"none"}}>Login</button>
+                        {/* <button id="button" className={this.state.btnClass} onClick={this.changeBtnClass} style={{outline:"none"}}>Login</button> */}
+                        <Button className="btn-block rounded z-depth-1a">Login</Button>
                       </div>
                       <p className="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
                       <div className="row my-3 d-flex justify-content-center">
-                        <Button color="white" rounded className="mr-md-3 z-depth-1a"><Fa icon="facebook" className="blue-text" /></Button>
-                        <Button color="white" rounded className="mr-md-3 z-depth-1a"><Fa icon="twitter" className="blue-text" /></Button>
-                        <Button color="white" rounded className="z-depth-1a"><Fa icon="google-plus" className="blue-text" /></Button>
+                        <Button color="white" className=" face mr-md-3 z-depth-1a rounded"><Fa icon="facebook" className="indigo-text" /></Button>
+                        <Button color="white" className="twi mr-md-3 z-depth-1a rounded"><Fa icon="twitter" className="blue-text" /></Button>
+                        <Button color="white" className=" goop z-depth-1a rounded"><Fa icon="google-plus" className="red-text" /></Button>
                       </div>
                     </div>
                     </CardBody>
@@ -185,7 +186,7 @@ class TemporaryDrawer extends React.Component {
                       <Input label="Your password" icon="lock" group type="password" validate/>
                     </div>
                     <div className="text-center mb-3">
-                      <Button gradient="blue" rounded className="btn-block z-depth-1a" >Register</Button>
+                      <Button className="btn-block rounded z-depth-1a" >Register</Button>
                     </div>
                     </CardBody>
                   </Tab>
@@ -201,7 +202,7 @@ class TemporaryDrawer extends React.Component {
               >
               <img src="https://static.wixstatic.com/media/6f38c3_1d7d6ecf60d141c8a4bf993da41b5505~mv2.png/v1/fill/w_212,h_69,al_c,q_80/6f38c3_1d7d6ecf60d141c8a4bf993da41b5505~mv2.webp" alt="logo" width="170" height="auto" className="rounded"/>
         
-              <List>
+              <List className="list">
                 <Link to='/' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>

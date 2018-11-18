@@ -54,8 +54,8 @@ class ContactPage extends Component {
                       <Col md="12">
                         <div className="md-form mb-0">
                           <Input type="textarea" id="form-contact-message" label="Your message"/>
-                          <Button tag="a" floating color="blue" size="lg">
-                            <Fa icon="send-o"/> Submit
+                          <Button tag="a" floating color="black" size="lg">
+                            <Fa icon="send-o"/>
                           </Button>
                         </div>
                       </Col>
@@ -81,17 +81,17 @@ class ContactPage extends Component {
                     <hr className="my-4"/>
                     <ul className="list-inline text-center list-unstyled">
                       <li className="list-inline-item">
-                        <a className="p-2 fa-lg w-ic">
+                        <a className="p-2 fa-lg w-ic f5">
                           <Fa icon="twitter"/>
                         </a>
                       </li>
                       <li className="list-inline-item">
-                        <a className="p-2 fa-lg w-ic">
+                        <a className="p-2 fa-lg w-ic f6">
                           <Fa icon="linkedin"/>
                         </a>
                       </li>
                       <li className="list-inline-item">
-                        <a className="p-2 fa-lg w-ic">
+                        <a className="p-2 fa-lg w-ic f7">
                           <Fa icon="instagram"/>
                         </a>
                       </li>
