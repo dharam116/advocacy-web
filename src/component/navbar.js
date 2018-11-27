@@ -56,8 +56,14 @@ const styles = theme => ({
   nested: {
     paddingLeft: theme.spacing.unit * 4,
   },
-});
 
+  signUp_Advocate: {
+    display: 'none',
+    color: 'white',
+  },
+});
+var obj1;
+var obj2;
 var i = 0;
 var funcs = ['addClass1', 'addClass2', 'addClass3'];
 
@@ -113,6 +119,18 @@ class TemporaryDrawer extends React.Component {
       modal: !this.state.modal
     });
   }
+
+  // change(page)
+  // {
+  //   obj2 = document.getElementById('signUp_Advocate');
+  //   obj1 = document.getElementById('signUp_Client');
+  //   switch(page)
+  //   {
+  //     default: alert("Error");
+  //     case 1: obj1.style.display='block';
+  //     case 2: obj2.style.display='block';
+  //   }
+  // }
   
   state = {
     open: false,
@@ -179,15 +197,23 @@ class TemporaryDrawer extends React.Component {
                   </Tab>
                   <Tab label="Sign Up">
                     <CardBody>
-                    <div className="grey-text">
+                      <div className="grey-text" id="signUp_Client">
+                      <p className="font-small d-flex justify-content-end pb-3">Are you an Advocate?<Link to="" className="black-text ml-1" > Register Here</Link></p>
                       <Input label="Your name" icon="user" group type="text" validate error="wrong" success="right"/>
                       <Input label="Your email" icon="envelope" group type="email" validate error="wrong" success="right"/>
-                      <Input label="Confirm your email" icon="exclamation-triangle" group type="text" validate error="wrong" success="right"/>
                       <Input label="Your password" icon="lock" group type="password" validate/>
-                    </div>
-                    <div className="text-center mb-3">
+                      <Input label="Confirm password" icon="lock" group type="password" validate/>
+                      </div>
+                      {/* <div className="grey-text" id="signUp_Advocate">
+                      <p className="font-small d-flex justify-content-end pb-3">Are you a Client?<a onClick={this.change(2).bind(this)} className="black-text ml-1" > Register Here</a></p>
+                      <Input label="Your name" icon="user" group type="text" validate error="wrong" success="right"/>
+                      <Input label="Your email" icon="envelope" group type="email" validate error="wrong" success="right"/>
+                      <Input label="Your password" icon="lock" group type="password" validate/>
+                      <Input label="Confirm password" icon="lock" group type="password" validate/>
+                      </div> */}
+                      <div className="text-center mb-3">
                       <Button className="btn-block rounded z-depth-1a" >Register</Button>
-                    </div>
+                      </div>
                     </CardBody>
                   </Tab>
                 </Tabs>
@@ -349,6 +375,15 @@ class TemporaryDrawer extends React.Component {
                 </ListItem>
                 </Link>
                 <Divider />
+                <Link to='/user-profile' style={{ textDecoration: 'none', color: 'black'}}>
+                <ListItem button onClick={this.toggleDrawer('left', false)}>
+                <ListItemIcon>
+                  <Person color="black" />
+                </ListItemIcon>
+                  User Profile
+                </ListItem>
+                </Link>
+                <Divider />
                 <Link to='/search' style={{ textDecoration: 'none', color: 'black'}}>
                 <ListItem button onClick={this.toggleDrawer('left', false)}>
                 <ListItemIcon>
@@ -356,8 +391,7 @@ class TemporaryDrawer extends React.Component {
                 </ListItemIcon>
                   Search
                 </ListItem>
-                </Link>
-                
+              </Link>
             </List>
           </div>
         </Drawer>

@@ -642,3 +642,57 @@ button {
 .goop:hover {
   background-color: #CC3333!important;
 }
+
+.pt-5, .py-5 {
+  padding-top: 3rem!important;
+}
+.justify-content-center {
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.pl-md-0, .px-md-0 {
+    padding-left: 0!important;
+}
+.pl-5, .px-5 {
+    padding-left: 3rem!important;
+}
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+.user {
+  padding-left: 10%;
+  margin: 5%;
+}
+.MuiStepper-root-46 {
+  display: flex;
+  padding: 60px!important;
+}
+.MuiStepLabel-label-85.MuiStepLabel-active-86 {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  font-size: 30px!important;
+}
+.MuiPaper-root-50 {
+  background-color: #fff;
+  border-radius: 3%;
+}
+.MuiButton-containedPrimary-142 {
+  color: #fff;
+  background-color: black;
+}
+.MuiButton-containedPrimary-142:hover {
+  color: #000;
+  background-color: red;
+}

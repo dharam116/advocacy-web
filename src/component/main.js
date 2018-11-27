@@ -17,6 +17,7 @@ import Search from './search'
 import Profile1 from './profile1'
 // import LoginPage from './login'
 // import SignUp from './sign-up'
+import UserProfile from './user-profile'
 
 const Main = () => (
   <main>
@@ -36,6 +37,7 @@ const Main = () => (
       <Route path='/our-people' component={People} />
       <Route path='/search' component={Search} />
       <Route path='/profile1' component={Profile1} />
+      <Route path='/user-profile' component={UserProfile} />
     </Switch>
   </main>
 )
